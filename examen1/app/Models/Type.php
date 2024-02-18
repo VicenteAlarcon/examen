@@ -12,5 +12,5 @@ class Types extends Model
         'name',
         'colour',
         'model',
-    ]
+    ];
 }
