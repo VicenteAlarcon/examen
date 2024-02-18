@@ -15,50 +15,50 @@ class TypesTableSeeder extends Seeder
     {  
        //inicializamos faker
 
-      
+       $faker = Faker::create();
 
         $tipo = new Type();
         $tipo->name = "Administrador";
-       
+        $tipo->colour = $faker->hexColor();
         $tipo->model = "App\Models\User";
         $tipo->save();
         
         $tipo = new Type();
         $tipo->name = "Gestor";
-        
+        $tipo->colour = $faker->hexColor();
         $tipo->model = "App\Models\User";
         $tipo->save();
 
         $tipo = new Type();
         $tipo->name = "Empleado";
-      
+        $tipo->colour = $faker->hexColor();
         $tipo->model = "App\Models\User";
         $tipo->save();
 
         $tipo = new Type();
         $tipo->name = "En curso";
-     
+        $tipo->colour = $faker->hexColor();
         $tipo->model = "App\Models\Task";
         $tipo->save();
 
 
         $tipo = new Type();
         $tipo->name = "Pendiente";
-   
+        $tipo->colour = $faker->hexColor();
         $tipo->model = "App\Models\Task";
         $tipo->save();
 
 
         $tipo = new Type();
         $tipo->name = "En espera";
-      
+        $tipo->colour = $faker->hexColor();
         $tipo->model = "App\Models\Task";
         $tipo->save();
 
 
         $tipo = new Type();
         $tipo->name = "Algun día";
-       
+        $tipo->colour = $faker->hexColor();
         $tipo->model = "App\Models\Task";
         $tipo->save();
 }
