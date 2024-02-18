@@ -17,11 +17,11 @@
       <th scope="row">{{$user->id}}</th>
       <td>{{$user->name}}</td>
       <td>{{$user->email}}</td>
-      @foreach($user->type as $data)
-       {{$data}}
+      <td>{{$user->type->id}}</td>
+      <td>{{$user->type->name}}</td>
+      <td>{{$user->type->colour}}</td>
+      <td>{{$user->type->model}}</td>
 </tr>
-  @endforeach
-    </tr>
     @endforeach
   </tbody>
 </table>
