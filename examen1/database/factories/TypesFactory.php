@@ -17,7 +17,7 @@ class TypesFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->hexColor(),
         ];
     }
 }
