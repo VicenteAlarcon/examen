@@ -25,7 +25,7 @@
       <td>{{$user->type->colour}}</td>
       <td>{{$user->type->model}}</td>
       @if($user->type->name == 'Administrador')
-      <a href="#" class="btn btn-secondary">Borrar</a>
+      <td> <a href="#" class="btn btn-secondary">Borrar</a></td>
       @endif
 </tr>
     @endforeach
