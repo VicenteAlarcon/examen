@@ -18,9 +18,7 @@
       <td>{{$user->name}}</td>
       <td>{{$user->email}}</td>
       @foreach($user->type as $data)
-      <tr>
-      <td>{{$data->name}}</td>
-      <td>{{$data->colour}}</td>
+       {{$data}}
 </tr>
   @endforeach
     </tr>
