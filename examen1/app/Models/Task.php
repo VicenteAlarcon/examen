@@ -25,7 +25,7 @@ class Task extends Model
 
   public function type()
   {
-    return $this->belongTo(Type::class);
+    return $this->belongsTo(Type::class);
   }
 
 

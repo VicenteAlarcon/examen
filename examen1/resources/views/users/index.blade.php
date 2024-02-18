@@ -17,7 +17,7 @@
       <th scope="row">{{$user->id}}</th>
       <td>{{$user->name}}</td>
       <td>{{$user->email}}</td>
-      @foreach($user->type_id as $data)
+      @foreach($user->type as $data)
       <tr>
       <td>{{$data->name}}</td>
       <td>{{$data->colour}}</td>
