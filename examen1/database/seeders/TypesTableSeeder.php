@@ -11,7 +11,11 @@ class TypesTableSeeder extends Seeder
      * Run the database seeds.
      */
     public function run(): void
-    {
+    {  
+       //inicializamos faker
+
+       $faker = Faker\Factory::create();
+
         $tipo = new Type();
         $tipo->name = "Administrador";
         $tipo->colour = $faker->hexColor();;
