@@ -17,15 +17,10 @@
       <th scope="row">{{$user->id}}</th>
       <td>{{$user->name}}</td>
       <td>{{$user->email}}</td>
-      @foreach($user->type as $data)
-      <tr>
-      <td>{{$data->name}}</td>
-      <td>{{$data->colour}}</td>
-</tr>
-  @endforeach
+   
     </tr>
     @endforeach
   </tbody>
 </table>
-
+   {{$user}}
 @endsection
