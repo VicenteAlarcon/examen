@@ -57,3 +57,4 @@ class TypesTableSeeder extends Seeder
         $tipo->model = "App\Models\Task";
         $tipo->save();
 }
+}
