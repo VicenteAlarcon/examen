@@ -8,7 +8,10 @@
       <th scope="col">#</th>
       <th scope="col">Nombre</th>
       <th scope="col">Email</th>
-      <th scope="col">Tipo usuario</th>
+      <th scope="col">Id tipo</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Color tipo</th>
+      <th scope="col">Modelo tipo</th>
     </tr>
   </thead>
   <tbody>
@@ -21,6 +24,9 @@
       <td>{{$user->type->name}}</td>
       <td>{{$user->type->colour}}</td>
       <td>{{$user->type->model}}</td>
+      @if($user->type->name == 'Administrador')
+      <a href="#" class="btn btn-secondary">Borrar</a>
+      @endif
 </tr>
     @endforeach
   </tbody>
