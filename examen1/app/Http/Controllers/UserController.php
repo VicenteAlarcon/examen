@@ -20,7 +20,8 @@ class UserController extends Controller
      */
     public function create()
     {
-       return view('users.create');
+        $users = User::with('type')->get();
+       return view('users.create' compact('users'));
     }
 
     /**

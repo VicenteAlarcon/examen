@@ -24,6 +24,7 @@
       <td>{{$user->type->name}}</td>
       <td>{{$user->type->colour}}</td>
       <td>{{$user->type->model}}</td>
+      <td> <a href="{{route('users.create')}}" class="btn btn-primary">Crear usuario</a></td>
       @if($user->type->name == 'Administrador')
       <td> <a href="#" class="btn btn-secondary">Borrar Proyectos</a></td>
       <td> <a href="#" class="btn btn-secondary">Borrar Usuarios</a></td>
@@ -32,5 +33,5 @@
     @endforeach
   </tbody>
 </table>
-
+<a href="{{route('users.create')}}" class="btn btn-primary">Crear usuario</a>
 @endsection
