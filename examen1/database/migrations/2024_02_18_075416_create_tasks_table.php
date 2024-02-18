@@ -16,6 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('task_description');
             $table->date('due_date');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('type_id');
+            $table->foreign('type_id')->references('id')->on('types');
             $table->timestamps();
         });
     }
