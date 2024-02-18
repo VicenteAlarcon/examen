@@ -11,7 +11,7 @@
       <th scope="col">Id tipo</th>
       <th scope="col">Tipo</th>
       <th scope="col">Color tipo</th>
-      <th scope="col">Modelo tipo</th>
+      <th scope="col" colspan="3">Modelo tipo</th>
     </tr>
   </thead>
   <tbody>
@@ -25,7 +25,8 @@
       <td>{{$user->type->colour}}</td>
       <td>{{$user->type->model}}</td>
       @if($user->type->name == 'Administrador')
-      <td> <a href="#" class="btn btn-secondary">Borrar</a></td>
+      <td> <a href="#" class="btn btn-secondary">Borrar Proyectos</a></td>
+      <td> <a href="#" class="btn btn-secondary">Borrar Usuarios</a></td>
       @endif
 </tr>
     @endforeach
