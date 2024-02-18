@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Type;
 
 class User extends Authenticatable
 {
@@ -42,4 +43,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function type()
+    {
+        return $this->belongTo(Type::class);
+    }
+
+    public function tasks()
+    {
+        return $this->belongsToMany(Task::class, 'task_user', 'user_id', 'task_id');
+    }
 }
