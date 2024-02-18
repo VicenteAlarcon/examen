@@ -20,7 +20,7 @@
     </div>
   </div>
   @foreach($users as $user)
-  @if($user->type->name== 'Administrador' || $user->type->name== 'Gestor')
+  @if($user->type->name !== 'Empleado')
   <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="type_id">
     <option selected="">Open this select menu</option>
     <option value="1">Administrador</option>
