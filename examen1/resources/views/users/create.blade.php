@@ -27,6 +27,8 @@
     <option value="2">Gestor</option>
     <option value="3">Empleado</option>
   </select>
+  @endif
+  @endforeach
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
 
