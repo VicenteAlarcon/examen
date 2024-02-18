@@ -15,7 +15,7 @@ class TypesTableSeeder extends Seeder
     {  
        //inicializamos faker
 
-       $faker = Faker\Factory::create();
+      
 
         $tipo = new Type();
         $tipo->name = "Administrador";
