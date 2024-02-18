@@ -11,7 +11,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $user = User::all()->with('types');
+        return view('users.index', compact('user'));
     }
 
     /**
@@ -19,7 +20,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+       return view('users.create')
     }
 
     /**

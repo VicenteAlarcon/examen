@@ -19,7 +19,7 @@ class TaskUserController extends Controller
      */
     public function create()
     {
-        //
+        return view('tasks_users.create');
     }
 
     /**
@@ -27,7 +27,7 @@ class TaskUserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
