@@ -46,7 +46,7 @@ class User extends Authenticatable
 
     public function type()
     {
-        return $this->belongTo(Type::class);
+        return $this->belongsTo(Type::class);
     }
 
     public function tasks()
